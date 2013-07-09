@@ -1,10 +1,10 @@
-var fs = require('fs');
+// var fs = require('fs');
 
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var buf = fs.readFileSync('./index.html');
+// var buf = fs.readFileSync('./index.html');
 
 app.get('/', function(request, response) {
   response.send('Hello world');
